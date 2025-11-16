@@ -1,0 +1,23 @@
+{
+  "name": "mini_chatbot_workspace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node frontend/app.js",
+    "dev": "nodemon frontend/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KamiroDark/mini_chatbot_workspace.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KamiroDark/mini_chatbot_workspace/issues"
+  },
+  "homepage": "https://github.com/KamiroDark/mini_chatbot_workspace#readme",
+  "dependencies": {
+    "archiver": "^7.0.1"
+  }
+}
