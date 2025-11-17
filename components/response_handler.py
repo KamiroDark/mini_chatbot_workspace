@@ -4,7 +4,7 @@ Manages chatbot responses and interactions.
 """
 
 import json
-from datatime import datetime
+from datetime import datetime
 
 class ResponseHandler:
     def __init__(self):
@@ -54,4 +54,3 @@ class ResponseHandler:
     if __name__ == "__main__":
         main()
 
-        
