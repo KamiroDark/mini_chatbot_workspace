@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Chatbot Workspace</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 Chatbot Component Workspace</h1>
+            <p>Select components to build your custom chatbot</p>
+        </header>
+
+        <main>
+            <section class="components-panel">
+                <h2>Available Components</h2>
+                <div id="components-list">
+                    <!-- Los componentes se cargarán aquí dinámicamente -->
+                    <p>Loading components...</p>
+                </div>
+            </section>
+
+            <section class="actions-panel">
+                <button id="build-btn" class="btn-primary" disabled>
+                    Build & Download Package
+                </button>
+                <div id="status-message"></div>
+            </section>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
