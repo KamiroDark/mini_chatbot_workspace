@@ -13,12 +13,11 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, '../frontend')));
 
 const availableComponents = [
-
     {
         id: 1,
         name: 'Response Handler',
         file: 'response_handler.py',
-        description: 'Handles chatbot responses based on user input.'
+        description: 'Handles chatbot responses based on user input'
     },
     {
         id: 2,
@@ -31,6 +30,12 @@ const availableComponents = [
         name: 'Data Processor',
         file: 'data_processor.py',
         description: 'Processes and validates user input data'
+    },
+    {
+        id: 4,
+        name: 'Intent Classifier',
+        file: 'intent_classifier.py',
+        description: 'Classifies user intent using keyword matching'
     }
 ];
 
@@ -40,6 +45,7 @@ app.get('/api/components', (req, res) => {
         components: availableComponents
     });
 });
+
 
 app.post('/api/build', (req, res) => {
     const { components: selectedIds } = req.body;
